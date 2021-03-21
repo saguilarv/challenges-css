@@ -271,6 +271,20 @@ button:not(:disabled) {
   opacity: 0.65;
 }
 
+.btn-link {
+  font-weight: 400;
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.btn-link:hover {
+  color: #0a58ca;
+}
+
+.btn-link:disabled {
+  color: #6c757d;
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -385,16 +399,20 @@ body {
 
 .social-btn,
 .social-btn:visited,
-.social-btn:hover {
+.social-btn:hover,
+.social-btn:link {
   margin-right: 0.9rem;
   border: 1px solid white;
   color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .social-btn:active {
   margin-right: 0.9rem;
   border: 1px solid var(--soft-magenta);
   color: var(--soft-magenta);
+  outline: none;
 }
 
 .fb_round {
