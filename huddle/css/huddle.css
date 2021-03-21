@@ -271,20 +271,6 @@ button:not(:disabled) {
   opacity: 0.65;
 }
 
-.btn-link {
-  font-weight: 400;
-  color: #0d6efd;
-  text-decoration: underline;
-}
-
-.btn-link:hover {
-  color: #0a58ca;
-}
-
-.btn-link:disabled {
-  color: #6c757d;
-}
-
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
