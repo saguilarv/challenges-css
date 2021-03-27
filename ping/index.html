@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/ping.css">
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="container d-flex align-items-center justify-content-center sz100">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 ping-head">
+              <img class="logo-img" src="images/logo.svg" alt="">
+              <h1 class="mt-5">We are launching <b>soon!</b></h1>
+              <p>Subscribe and get notified</p>
+            </div>
+          </div>
+          <form class="needs-validation" novalidate>
+            <div class="row mt-3 ping-form">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 mt-2 ">
+                  <input type="email" class="form-control rounded-pill form-size" placeholder="Your email address" aria-describedby="emailHelp"  >
+                  <div id="emailHelp" class="invalid-feedback valid-msg">Please provide a valid email address</div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-2 ">
+                  <button type="submit" class="btn rounded-pill notify-btn shadow-none form-size">Notify Me</button>
+                </div>
+            </div>
+          </form>
+          <div class="row">
+            <div class="col-12 col-lg-12 mt-5 pt-3" >
+            <img class="dashb-img" src="images/illustration-dashboard.png" alt="">
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center social-block">
+                <a class="btn rounded-circle social-btn shadow-none" href="#" ><i class="fb_round fa fa-facebook"></i></a>    
+                <a class="btn rounded-circle social-btn shadow-none" href="#" ><i class="fa fa-twitter"></i></a>  
+                <a class="btn rounded-circle social-btn shadow-none" href="#" ><i class="fa fa-instagram"></i></a>  
+            </div>
+            <div class="col-12 mt-3">
+              <p class="attribution">&copy; Copyright Ping. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
